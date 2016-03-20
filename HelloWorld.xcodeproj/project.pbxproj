@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		73D50A401C9EB38200C8C227 /* HelloWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D50A3F1C9EB38200C8C227 /* HelloWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D50A481C9EB5EE00C8C227 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D50A471C9EB5EE00C8C227 /* Hello.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73D50A3C1C9EB38200C8C227 /* HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D50A3F1C9EB38200C8C227 /* HelloWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
 		73D50A411C9EB38200C8C227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D50A471C9EB5EE00C8C227 /* Hello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				73D50A3F1C9EB38200C8C227 /* HelloWorld.h */,
 				73D50A411C9EB38200C8C227 /* Info.plist */,
+				73D50A471C9EB5EE00C8C227 /* Hello.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D50A481C9EB5EE00C8C227 /* Hello.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +231,7 @@
 		73D50A451C9EB38200C8C227 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -237,12 +242,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerd0geek1.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		73D50A461C9EB38200C8C227 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
