@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Hello: NSObject {
+public class Hello: NSObject {
 
-    class func world() {
+    public class func world() {
         print("Hello World")
     }
 }
